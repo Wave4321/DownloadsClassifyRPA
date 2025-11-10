@@ -12,12 +12,13 @@ UiPath Studio/Robot (Windows, C# 식 표현 사용) — 프로젝트 타겟: Win
 주요 패키지(예시): System, UIAutomation, WebAPI, Mail, Excel 액티비티 등 (버전은 project.json 참조) 
 
 ### 폴더 구조(요약)
+```bash
 DownloadsClassify-RPA/
-├─ Main.xaml                 진입점
-├─ EnsureDirectory.xaml      대상 폴더 보장(없으면 생성)
-├─ fileMapping.json          확장자→카테고리 매핑 + 로깅 옵션
-└─ project.json              UiPath 프로젝트 메타/의존성
-
+├─ Main.xaml                # 진입점
+├─ EnsureDirectory.xaml     # 대상 폴더 보장(없으면 생성)
+├─ fileMapping.json         # 확장자→카테고리 매핑 + 로깅 옵션
+└─ project.json             # UiPath 프로젝트 메타/의존성
+```
 ### 설정 (fileMapping.json)
 fileMapping.json은 확장자별 카테고리를 정의합니다. 비어있는 확장자 키("")는 기타로 분류하는 기본값입니다. enableLogging이 있으면 간단한 로그를 켤 수 있도록 설계되어 있습니다. 
 
